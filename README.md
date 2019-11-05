@@ -228,3 +228,88 @@ h1{
       height:10%;
     
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    new code 
+    
+    
+    
+    
+    
+var room = true;
+/*function clean(){
+  
+  if(room === true){
+    room  = false;
+    document.getElementById("cle").style.color = 'red';
+  }
+  else{
+    document.getElementById("cle").style.color ="";
+    room = true;
+    var full = document.getElementById("full").innerHTML="";
+
+  }
+  
+
+}
+*/
+
+var totalguest1 = 0; //global variable that stores the number of guests in room 1
+
+function enterGuest() {
+  if (totalguest1 < 4) {
+    totalguest1++; //I will add one to the guest 
+    var node = document.createElement("LI"); //I am going to create a new list item
+    var guest = document.getElementById('user1').value; //I am going to get the value from the input field
+    var textnode = document.createTextNode(guest); //i am saying the variable guest as a text node
+    node.appendChild(textnode); // i am attaching textnode to the list item
+    document.getElementById("room1list").appendChild(node); //i am appending the list 
+  } else {
+    window.alert("Room is full");
+  }
+}
+
+
+function removeGuest() {
+  if (document.getElementsByTagName('li').length > 3) {
+    var full = document.getElementById("full").value = "";
+    var userNum = document.getElementById("remove").value;
+    var child = document.getElementsByTagName("li")[userNum - 1];
+    var parent = child.parentNode;
+    parent.removeChild(child);
+    document.getElementById("full").innerHTML = "";
+    document.getElementById("remove").value = "";
+
+  } else {
+    //I will get the value of the Rem
+    var userNum = document.getElementById("remove").value;
+    //I will convert it to ta number
+    //I will get the child based on the number
+    var child = document.getElementsByTagName("li")[userNum - 1];
+    //I will get the parent of the child
+    var parent = child.parentNode;
+    //I will remove the child from the parent
+    parent.removeChild(child);
+    document.getElementById("full").innerHTML = "";
+    document.getElementById("remove").value = "";
+
+
+  }
+
+}
+
+function removeAll() {
+  document.getElementById("he").innerHTML = "";
+  var full = document.getElementById("full").innerHTML = "";
+
+
+}
