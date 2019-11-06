@@ -236,6 +236,82 @@ html
 
 
 
+css
+
+h1{
+  text-align:center;
+}
+#first{
+      border-style:solid;
+      width:20%;
+      
+    }
+    
+  
+    #enter{
+      width:100%;
+      height:10%;
+    
+    }
+
+#second{
+      border-style:solid;
+      width:20%;
+      
+    }
+    
+   
+    #enter{
+      width:100%;
+      height:10%;
+    
+    }
+    
+#third{
+      border-style:solid;
+      width:20%;
+      
+    }
+  
+    #enter{
+      width:100%;
+      height:10%;
+    
+    }
+#fourth{
+      border-style:solid;
+      width:20%;
+      
+    }
+  
+    #enter{
+      width:100%;
+      height:10%;
+    
+    }
+#fifth{
+      border-style:solid;
+      width:20%;
+      
+    }
+  
+    #enter{
+      width:100%;
+      height:10%;
+    
+    }
+#sixth{
+      border-style:solid;
+      width:20%;
+      
+    }
+  
+    #enter{
+      width:100%;
+      height:10%;
+    
+    }
+
 
 
 
