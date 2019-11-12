@@ -138,10 +138,6 @@ function removeAll2() {
 
 
 html
-
-
-
-
 <html>
 <head>
   <link rel="stylesheet" href="hotelproject.css">
@@ -149,14 +145,20 @@ html
 
 </head>
 <body>
+  <h1 id="hotel">Turtle Hotel</h1>
+  <h2 id="hotel1">Welcome to the Automated Front Desk of Turtle Hotel</h2>
+ <div id="smoothbox"><a href ="#whole"><button id="smooth">Begin Your Check-In</button></a></div>
+  <!--<div id="totalGuests"><ol id="total"></ol></div final step-->
+  <div id="whole">
+  
   <div id="first">
     <h1 id="title">Room One</h1>
-    <input type= "text" id="user1">
+    <input type= "text" id="user1" >
     <button id="enter" onclick="enterGuest()">Enter Guest</button>
     <ol id="room1list"></ol>
     <p id="full"></p>
     <p id="cleaning"></p>
-    <input type="text" id="remove" placeholder="Enter check out guest number">
+    <input type="text" id="remove" placeholder="Enter guest number to check out">
     <button id="rem" onclick ="removeGuest()">Check Out</button>
     <button id="remall" onclick="removeAll()">Check Everyone Out</button>
     <button id="cle" onclick="clean()" >Clean Room</button>
@@ -169,7 +171,7 @@ html
     <ol id="room2list"></ol>
     <p id="full2"></p>
     <p id="cleaning2"></p>
-    <input type="text" id="remove2" placeholder="Enter check out guest number">
+    <input type="text" id="remove2" placeholder="Enter guest number to check out">
     <button id="rem" onclick ="removeGuest2()">Check Out</button>
     <button id="remall" onclick="removeAll2()">Check Everyone Out</button>
     <button id="cle2" onclick="clean2()" >Clean Room</button>
@@ -181,7 +183,7 @@ html
     <ol id="room3list"></ol>
     <p id="full3"></p>
     <p id="cleaning3"></p>
-    <input type="text" id="remove3" placeholder="Enter check out guest number">
+    <input type="text" id="remove3" placeholder="Enter guest number to check out">
     <button id="rem" onclick ="removeGuest3()">Check Out</button>
     <button id="remall" onclick="removeAll3()">Check Everyone Out</button>
     <button id="cle3" onclick="clean3()" >Clean Room</button>
@@ -193,7 +195,7 @@ html
     <ol id="room4list"></ol>
     <p id="full4"></p>
     <p id="cleaning4"></p>
-    <input type="text" id="remove4" placeholder="Enter check out guest number">
+    <input type="text" id="remove4" placeholder="Enter guest number to check out">
     <button id="rem" onclick ="removeGuest4()">Check Out</button>
     <button id="remall" onclick="removeAll4()">Check Everyone Out</button>
     <button id="cle4" onclick="clean4()" >Clean Room</button>
@@ -205,7 +207,7 @@ html
     <ol id="room5list"></ol>
     <p id="full5"></p>
     <p id="cleaning5"></p>
-    <input type="text" id="remove5" placeholder="Enter check out guest number">
+    <input type="text" id="remove5" placeholder="Enter guest number to check out">
     <button id="rem" onclick ="removeGuest5()">Check Out</button>
     <button id="remall" onclick="removeAll5()">Check Everyone Out</button>
     <button id="cle5" onclick="clean5()" >Clean Room</button>
@@ -217,13 +219,13 @@ html
     <ol id="room6list"></ol>
     <p id="full6"></p>
     <p id="cleaning6"></p>
-    <input type="text" id="remove6" placeholder="Enter check out guest number">
+    <input type="text" id="remove6" placeholder="Enter guest number to check out">
     <button id="rem" onclick ="removeGuest6()">Check Out</button>
     <button id="remall" onclick="removeAll6()">Check Everyone Out</button>
     <button id="cle6" onclick="clean6()" >Clean Room</button>
   </div>
   
-    
+    </div>
     
   
    
@@ -236,7 +238,131 @@ html
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 css
+body{
+  font-family: 'Indie Flower', cursive;
+  background-image:url("ocean.jpg");
+  background-repeat:no-repeat;
+
+
+}
+html{
+  scroll-behavior:smooth;
+}
+#hotel{
+  font-size:100px;
+}
+#hotel1{
+  text-align:center;
+  font-size:35px;
+}
+img{
+  width:100%;
+  height:100%;
+  
+}
+button{
+    font-family: 'Indie Flower', cursive;
+    
+}
+input{
+    font-family: 'Indie Flower', cursive;
+
+}
+#smooth{
+  width:100%;
+  height:100%;
+  font-size:25px;
+  
+}
+#smoothbox{
+  width:25%;
+  height:10%;
+  margin-left:37%;
+  margin-top:5%;
+  position:absolute;
+}
+#user1{
+  width:100%;
+}
+#remove{
+  width:100%;
+}
+#user2{
+  width:100%;
+}
+#remove2{
+  width:100%;
+}
+#user3{
+  width:100%;
+}
+#remove3{
+  width:100%;
+}
+#user4{
+  width:100%;
+}
+#remove4{
+  width:100%;
+}
+#user5{
+  width:100%;
+}
+#remove5{
+  width:100%;
+}
+#user6{
+  width:100%;
+}
+#remove6{
+  width:100%;
+}
+
+#remall{
+  width:100%;
+  
+}
+#cle{
+  width:100%;
+}
+#rem{
+  width:100%;
+}
+#enter{
+  width:100%;
+  height:4%;
+}
+#cle2{
+  width:100%;
+}
+#cle3{
+  width:100%;
+}
+#cle4{
+  width:100%;
+}
+#cle5{
+  width:100%;
+}
+#cle6{
+  width:100%;
+}
+
+
 
 h1{
   text-align:center;
@@ -244,74 +370,77 @@ h1{
 #first{
       border-style:solid;
       width:20%;
-      
+      position:absolute;
+      margin-top:2%;
     }
-    
+::placeholder{
+  font-family:'Indie Flower', cursive;
+}
   
-    #enter{
-      width:100%;
-      height:10%;
     
-    }
 
 #second{
       border-style:solid;
       width:20%;
-      
+      margin-left:20.5%;
+      margin-bottom:;
+      position:absolute;
+      margin-top:2%;
     }
     
    
-    #enter{
-      width:100%;
-      height:10%;
     
-    }
     
 #third{
       border-style:solid;
       width:20%;
+      margin-left:41%;
+      position:absolute;
+      margin-top:2%;
       
     }
   
-    #enter{
-      width:100%;
-      height:10%;
     
-    }
 #fourth{
       border-style:solid;
       width:20%;
+      margin-top:29%;
+      position:absolute;
       
     }
   
-    #enter{
-      width:100%;
-      height:10%;
     
-    }
 #fifth{
       border-style:solid;
       width:20%;
+      position:absolute;
+      margin-left:20.5%;
+      margin-top:29%;
+      
+
       
     }
   
-    #enter{
-      width:100%;
-      height:10%;
-    
-    }
+   
+
 #sixth{
       border-style:solid;
       width:20%;
-      
-    }
-  
-    #enter{
-      width:100%;
-      height:10%;
-    
-    }
+      position:absolute;
+      margin-left:41%;
+      margin-top:29%;
 
+    }
+#whole{
+  border-style:solid;
+  border-color:white;
+  height:147%;
+  width:62%;
+  margin-left:18%;
+  margin-top:45%;
+
+}
+    
 
 
 
