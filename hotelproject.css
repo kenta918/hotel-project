@@ -1,8 +1,7 @@
 body{
   background-image:url("ocean.jpg");
-  background-repeat:no-repeat;
-font-family: 'Cormorant Garamond', serif;
-color:#084869;
+  font-family: 'Cormorant Garamond', serif;
+  color:#084869;
 
   
 }
@@ -290,13 +289,11 @@ input{
     
 #bottom{
   background-color:lightblue;
-  height:10%;
+  height:10vh;
   color:black;
   position:absolute;
   text-align:center;
-  margin-left:-1%;
-  margin-right:2%;
-  width:100.4%;
+  width:99vw;
 }
 #totalGuests{
   border-style:solid;
