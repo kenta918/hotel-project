@@ -1,0 +1,200 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="Kenta-Sakamoto-hotel.css">
+ 
+    
+    
+  </head>
+  <body>
+     <div id="totalGuests"><div id="fixall"><h1 id="allgu">Total Guests</h1></div><ol id="total"></ol></div>
+     <button id="back" ><a href="Kenta-Sakamoto-hotel.html">back to page</a></button>
+     <button id="clear" onclick="clen()">clear</button>
+     <button onclick="load()">load</button>
+     <style>
+       #back{
+         margin-top:15%;
+       }
+     </style>
+<script>
+function clen(){
+  localStorage.clear();
+  location.reload();
+
+
+  
+}
+function load(){
+  location.href="Kenta-Sakamoto-hotelGuests.html"
+}
+      var i;
+      var guest = localStorage.getItem("info");
+      var newx;
+      var le;
+      var total;
+      var nody;
+      var total2;
+      var nody2;
+      var total3;
+      var nody3;
+      var total4;
+      var nody4;
+      var total5;
+      var nody5;
+      var total6;
+      var nody6;
+      if(guest != null){
+        var newx = guest.split(',')
+        var le = newx.length
+
+      }
+
+      
+      for(i=0; i<le; i++){
+        if(guest != null){
+          nody = document.createElement("li");
+          nody.setAttribute("id","allgues");
+          var text = document.createTextNode(newx[i]);
+          nody.appendChild(text);
+          document.getElementById("total").appendChild(nody);
+        }
+        
+        
+        
+        else{
+          break;
+        }
+      }
+      var u;
+      var newx2;
+      var le2;
+      var guest2 = localStorage.getItem("info2");
+      if(guest2 != null){
+        var newx2 = guest2.split(',');
+        var le2 = newx2.length;
+
+      }
+      
+     
+
+      
+      for(u=0; u<le2; u++){
+        if(guest2 != null){
+          var nody = document.createElement("li");
+          nody.setAttribute("id","allgues");
+          var text = document.createTextNode(newx2[u]);
+          nody.appendChild(text);
+          document.getElementById("total").appendChild(nody);
+        }
+        else{
+          break;
+        }
+        
+      }
+      var o;
+      var guest3 = localStorage.getItem("info3");
+      var newx3;
+      var le3;
+      if(guest3 != null){
+        var newx3 = guest3.split(',')
+        var le3 = newx3.length
+
+      }
+
+      
+      for(o=0; o<le3; o++){
+        if(guest3 != null){
+          var nody = document.createElement("li");
+          nody.setAttribute("id","allgues");
+          var text = document.createTextNode(newx3[o]);
+          nody.appendChild(text);
+          document.getElementById("total").appendChild(nody);
+      
+        }
+        else{
+          break
+        }
+        
+      }
+      
+      var p;
+
+      var guest4 = localStorage.getItem("info4");
+      
+      
+      var newx4;
+      var le4;
+      if(guest4 != null){
+        var newx4 = guest4.split(',')
+        var le4 = newx4.length
+
+      }
+
+      
+      for(p=0; p<le4; p++){
+        if(guest4 != null){
+          var nody = document.createElement("li");
+          nody.setAttribute("id","allgues");
+          var text = document.createTextNode(newx4[p]);
+          nody.appendChild(text);
+          document.getElementById("total").appendChild(nody);
+        }
+        else{
+          break;
+        }
+      }
+      var k;
+      var guest5 = localStorage.getItem("info5");
+      
+      
+      var newx5;
+      var le5;
+      if(guest5 != null){
+        var newx5 = guest5.split(',')
+        var le5 = newx5.length
+
+      }
+
+      
+      for(k=0; k<le5; k++){
+        if(guest5 != null){
+          var nody = document.createElement("li");
+          nody.setAttribute("id","allgues");
+          var text = document.createTextNode(newx5[k]);
+          nody.appendChild(text);
+          document.getElementById("total").appendChild(nody);
+        }
+        else{
+          break
+        }
+      }
+      var j;
+
+      var guest6 = localStorage.getItem("info6");
+      
+      var newx6;
+      var le6;
+      if(guest6 != null){
+        var newx6 = guest6.split(',')
+        var le6 = newx6.length
+
+      }
+      
+      for(j=0; j<le6; j++){
+        if(guest6 != null){
+          var nody = document.createElement("li");
+          nody.setAttribute("id","allgues");
+          var text = document.createTextNode(newx6[j]);
+          nody.appendChild(text);
+          document.getElementById("total").appendChild(nody);
+        }
+        else{
+          break;
+        }
+      }
+    
+      
+      
+    </script>
+    
+  </body>
+</html>
